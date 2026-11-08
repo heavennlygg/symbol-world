@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+}
+
+#search {
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.symbol {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+#darkModeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.dark {
+    background-color: #121212;
+    color: white;
+}
+
+.dark .symbol {
+    border: 1px solid white;
+}
+
+.dark input {
+    background-color: #222;
+    color: white;
+    border: 1px solid white;
+}
+
+.dark button {
+    background-color: #333;
+    color: white;
+    border: 1px solid white;
+}

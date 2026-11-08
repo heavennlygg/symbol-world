@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Symbol Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>ℎ𝑒𝑙𝑙𝑜 𝑤𝑜𝑟𝑙𝑑!</h1>
+
+    <button id="darkModeButton" onclick="toggleDarkMode()">
+        Activate dark mode
+    </button>
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Search symbols..."
+        onkeyup="searchSymbols()"
+    >
+
+    <p id="message"></p>
+
+    <button onclick="showMessage('Donations coming soon!')">
+        donate :)
+    </button>
+
+    <div id="symbols"></div>
+
+    <input
+        type="text"
+        id="newSymbol"
+        placeholder="Add a symbol"
+        maxlength="20"
+    >
+
+    <input
+        type="text"
+        id="keywords"
+        placeholder="Keywords (cat, bows, stars...)"
+        maxlength="30"
+    >
+
+    <button onclick="addSymbol()">Add</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
